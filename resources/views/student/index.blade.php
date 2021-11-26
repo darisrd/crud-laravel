@@ -3,10 +3,6 @@
 @section('title', 'Home')
 
 @section('content')
-    {{-- @if (session('success'))
-        <div id="liveAlertPlaceholder"></div>
-        <button type="button" class="btn btn-primary" id="liveAlertBtn">{{ session('success') }}</button>
-    @endif --}}
     @if (session()->has('success'))
         <div class="alert alert-success alert-dismissible fade show" role="alert">
             {{ session('success') }}
